@@ -52,7 +52,20 @@
         "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
       },
       "dataPost": {
-        "tadName": "",
+        "tagName": [
+          {
+            "label": "binh123",
+            "value": "binh123"
+          },
+          {
+            "label": "bach345",
+            "value": "bach345"
+          },
+          {
+            "label": "hoang123",
+            "value": "hoang123"
+          }
+        ],
         "text": "Xin chào mọi người 2",
         "urlUpload": ""
       }
@@ -144,6 +157,13 @@
             "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=87a53cbb-d76a-4b49-9b99-79ecb72e1db9"
           },
           "text": "hello"
+        },
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "hkkk"
         }
       ],
       "id": 6

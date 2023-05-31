@@ -1,5 +1,6 @@
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "toastify-js/src/toastify.css";
 
 import App from "./App";
 import { Provider } from "react-redux";
