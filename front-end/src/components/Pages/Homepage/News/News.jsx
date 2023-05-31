@@ -47,6 +47,17 @@ function News() {
     dispatch(reloadPosts());
   }
 
+  const [postId, setPostId] = useState({
+    idUser: { username: "", urlAvatar: "" },
+    dataPost: { tagName: [], text: "", urlUpload: "" },
+  });
+  const getPost = async (id) => {
+    await axios
+      .get(`http://localhost:8000/posts/${id}`)
+      .then((res) => setPostId(res.data))
+      .catch((err) => console.log(err));
+  };
+
   // modal state
   const handleClose = () => {
     setShow(false);
@@ -57,6 +68,7 @@ function News() {
     setShow(true);
     idPost.current = id;
     loaderComments(id);
+    getPost(id);
   };
 
   // modal state show edit posts
@@ -117,6 +129,7 @@ function News() {
     loaderPost();
     if (idPost.current) {
       loaderComments(idPost.current);
+      getPost(idPost.current);
     }
   }, [status]);
   return (
@@ -203,16 +216,22 @@ function News() {
       {/* modal */}
 
       {/* modal Comments */}
-      <Comnents
-        show={show}
-        handleClose={handleClose}
-        dataComment={dataComment}
-        textComment={textComment}
-        statusUpdate={statusUpdate}
-        setStatusUpdate={setStatusUpdate}
-        setTextComment={setTextComment}
-        idPost={idPost.current}
-      />
+      {idPost.current ? (
+        <Comnents
+          show={show}
+          handleClose={handleClose}
+          dataComment={dataComment}
+          textComment={textComment}
+          statusUpdate={statusUpdate}
+          setStatusUpdate={setStatusUpdate}
+          setTextComment={setTextComment}
+          idPost={idPost.current}
+          postId={postId}
+        />
+      ) : (
+        ""
+      )}
+
       {/* modal edit posts */}
       {idPost.current ? (
         <ModalEditPost

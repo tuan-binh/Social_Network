@@ -17,6 +17,7 @@ function Comnents({
   setStatusUpdate,
   setTextComment,
   idPost,
+  postId,
 }) {
   const indexEdit = useRef();
 
@@ -76,9 +77,35 @@ function Comnents({
   return (
     <Modal className="modal-comment" show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Comment</Modal.Title>
+        <Modal.Title>
+          <div className="row-info">
+            <div>
+              <img src={postId.idUser.urlAvatar} alt="" />
+            </div>
+            <p>{postId.idUser.username}</p>
+          </div>
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
+        <div className="info-comment">
+          <div className="tag-name">
+            {postId.dataPost.tagName
+              ? postId.dataPost.tagName.map((e, i) => (
+                  <span key={i}>{e.value} </span>
+                ))
+              : ""}
+          </div>
+          <div className="noi-dung">
+            {postId.dataPost.text ? postId.dataPost.text : ""}
+          </div>
+          <div className="block-img">
+            {postId.dataPost.urlUpload ? (
+              <img src={postId.dataPost.urlUpload} alt="" />
+            ) : (
+              ""
+            )}
+          </div>
+        </div>
         <ul>
           {dataComment ? (
             dataComment.dataComment.map((comment, i) => {
