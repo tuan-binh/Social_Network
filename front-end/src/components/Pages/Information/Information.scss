@@ -1,0 +1,293 @@
+.body-information {
+}
+
+.wallpaper {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  // z-index: -1;
+  .addFriends {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    button {
+      --button_radius: 0.75em;
+      --button_color: #e8e8e8;
+      --button_outline_color: #000000;
+      font-size: 17px;
+      font-weight: bold;
+      border: none;
+      border-radius: var(--button_radius);
+      background: var(--button_outline_color);
+      .button_top {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid var(--button_outline_color);
+        border-radius: var(--button_radius);
+        padding: 0.75em 1.5em;
+        background: var(--button_color);
+        color: var(--button_outline_color);
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
+      }
+
+      &:hover .button_top {
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.33em);
+      }
+
+      &:active .button_top {
+        /* Push the button downwards when pressed */
+        transform: translateY(0);
+      }
+    }
+  }
+  .editWallpaper {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: all 0.3s ease;
+    background: #fff;
+    border-radius: 50%;
+    border: 4px solid #000;
+    &:hover {
+      background: #eaeaea;
+      cursor: pointer;
+    }
+    i {
+      padding: 15px;
+    }
+    input {
+      display: none;
+    }
+  }
+
+  & > img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    display: block;
+  }
+  .avatar-information {
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    transform: translateY(70%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 600;
+
+    & > div {
+      width: 230px;
+      height: 230px;
+      position: relative;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 5px solid #fff;
+      }
+      input {
+        display: none;
+      }
+      i {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        right: 15px;
+        background: #fff;
+        border: 3px solid #000;
+        padding: 12px;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        &:hover {
+          cursor: pointer;
+          background: #eaeaea;
+        }
+      }
+      &:hover i {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}
+
+.body-posts {
+  margin: 250px auto 0;
+  width: 65%;
+  background: #cfcfcf;
+  display: flex;
+  border-radius: 12px;
+  .departmemts {
+    position: sticky;
+    top: 100px;
+    width: 35%;
+    margin: 20px;
+    border-radius: 12px;
+    height: 100%;
+  }
+  .posts {
+    flex: 1;
+    margin-top: 50px;
+  }
+
+  .postNews {
+    background: #fff;
+  }
+}
+
+.list-my-news {
+  .item {
+    background: #fff;
+    border-radius: 12px;
+    margin: 70px 20px;
+    padding: 20px 20px 0 20px;
+
+    .head {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .action-post {
+        margin-left: auto;
+        i {
+          padding: 2px;
+          font-size: 22px;
+          font-weight: 600;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    // content
+    .content {
+      width: 100%;
+
+      .noidung {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    .total-heart {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0 20px;
+      i {
+        font-size: 20px;
+        display: block;
+        color: red;
+      }
+    }
+
+    // action-item
+    .action-item {
+      display: flex;
+      text-align: center;
+      gap: 15px;
+      padding: 10px;
+      .heart,
+      .dis-like,
+      .comment {
+        flex: 1;
+        margin-top: 15px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      button {
+        /* Variables */
+        --button_radius: 0.75em;
+        --button_color: #e8e8e8;
+        --button_outline_color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: var(--button_radius);
+        background: var(--button_outline_color);
+      }
+
+      .button_top {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid var(--button_outline_color);
+        border-radius: var(--button_radius);
+        padding: 0.75em 1.5em;
+        background: var(--button_color);
+        color: var(--button_outline_color);
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
+      }
+
+      button:hover .button_top {
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.33em);
+      }
+
+      button:active .button_top {
+        /* Push the button downwards when pressed */
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .wallpaper {
+    width: 100%;
+    .avatar-information {
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      bottom: -200px;
+      text-align: center;
+
+      h1 {
+        padding: 20px;
+      }
+    }
+  }
+
+  .body-posts {
+    width: 90%;
+
+    .departmemts {
+      display: none;
+    }
+
+    .list-my-news {
+      padding: 0;
+    }
+  }
+}

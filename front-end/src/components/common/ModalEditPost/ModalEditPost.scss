@@ -1,0 +1,114 @@
+.row-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  div {
+    width: 50px;
+    height: 50px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+.modal-header {
+  border: none;
+}
+
+.body-edit {
+  input {
+    padding: 0 10px 10px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .block-img-edit {
+    position: relative;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .absolute {
+      display: flex;
+      gap: 5px;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: red;
+      font-size: 25px;
+      transform: translateY(-17px);
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      input {
+        display: none;
+      }
+    }
+
+    &:hover .absolute {
+      opacity: 1;
+      transform: translateY(0);
+      cursor: pointer;
+    }
+
+    &:hover label {
+      cursor: pointer;
+    }
+  }
+}
+
+.btn-finish {
+  width: 100%;
+  padding: 10px;
+  button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 999px;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+  }
+}
+
+.upload-firebase {
+  width: 100%;
+  height: 200px;
+  background: #eaeaea;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed blue;
+
+  .box {
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px dashed blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #a0a0a0;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  input {
+    display: none;
+  }
+}

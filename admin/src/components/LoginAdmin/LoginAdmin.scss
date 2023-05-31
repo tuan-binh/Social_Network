@@ -1,0 +1,22 @@
+.flex-login-admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ccc;
+  .box-login-admin {
+    background: #eaeaea;
+    border-radius: 12px;
+    padding: 50px;
+    width: 350px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      padding: 20px;
+    }
+    .login-admin {
+      width: 100%;
+    }
+  }
+}

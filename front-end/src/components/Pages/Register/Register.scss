@@ -1,0 +1,21 @@
+.flex-register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  // background: ;
+  background-image: url("https://img.freepik.com/free-vector/japanese-seamless-vector-vintage-wave-pattern_8130-645.jpg?w=1060&t=st=1685173440~exp=1685174040~hmac=74df5a0d01bb9af700f10f1e77dad132c6b8e2e1dbf7a3f944f3906c4c0439bb");
+
+  .box-register {
+    background: #fff;
+    padding: 50px;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+
+    h2 {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+}

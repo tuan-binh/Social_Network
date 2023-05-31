@@ -1,0 +1,244 @@
+.container-news {
+  padding: 100px 80px;
+}
+
+.postNews {
+  background: #eaeaea;
+  width: 70%;
+  border-radius: 15px;
+  margin: 20px auto 100px;
+  padding: 10px;
+
+  // content
+  .content {
+    height: 100px;
+    background: #ccc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+
+    h2 {
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+
+  // action
+}
+
+.list-new {
+  width: 70%;
+  margin: 0 auto;
+  .item {
+    background: #fff;
+    border-radius: 12px;
+    margin: 70px 0;
+
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+
+    .head {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      & div:hover {
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 600;
+      }
+
+      .action-post {
+        margin-left: auto;
+        i {
+          padding: 2px;
+          font-size: 22px;
+          font-weight: 600;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .avatar {
+      width: 50px;
+      height: 50px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    // content
+    .content {
+      width: 100%;
+
+      .tag-name {
+        font-size: 20px;
+        padding: 10px;
+        color: #16ca16;
+      }
+
+      .noidung {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      img {
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+        padding: 10px;
+        border-radius: 20px;
+      }
+    }
+    // total heart
+    .total-heart {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0 20px;
+      i {
+        font-size: 20px;
+        display: block;
+        color: red;
+      }
+    }
+
+    // action-item
+    .action-item {
+      display: flex;
+      text-align: center;
+      gap: 15px;
+      padding: 10px;
+      .heart,
+      .dis-like,
+      .comment {
+        flex: 1;
+        margin-top: 15px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      button {
+        /* Variables */
+        --button_radius: 0.75em;
+        --button_color: #98c0fd;
+        --button_outline_color: #000000;
+        font-size: 17px;
+        font-weight: bold;
+        border: none;
+        border-radius: var(--button_radius);
+        background: var(--button_outline_color);
+      }
+
+      .button_top {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid var(--button_outline_color);
+        border-radius: var(--button_radius);
+        padding: 0.75em 1.5em;
+        background: var(--button_color);
+        // color: var(--button_outline_color);
+        color: #fff;
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
+      }
+
+      button:hover .button_top {
+        /* Pull the button upwards when hovered */
+        transform: translateY(-0.33em);
+      }
+
+      button:active .button_top {
+        /* Push the button downwards when pressed */
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+.ant-btn-default {
+  display: none !important;
+}
+
+.modal-comment {
+  margin-top: 200px;
+
+  .modal-header {
+    border: none;
+  }
+
+  .send-message {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+    img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    input {
+      flex: 1;
+      border-radius: 999px;
+      outline: none;
+      padding: 0 15px;
+    }
+
+    .btn-send {
+      border-radius: 999px;
+    }
+  }
+
+  ul {
+    padding: 0;
+    li {
+      margin: 10px 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .user {
+        flex: 1;
+        .text-user {
+          display: flex;
+          justify-content: space-between;
+          color: blue;
+          font-weight: 500;
+          i:last-child {
+            margin-left: 5px;
+          }
+
+          i:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container-news {
+    padding: 100px 40px !important;
+  }
+
+  .list-new {
+    width: 95%;
+  }
+}

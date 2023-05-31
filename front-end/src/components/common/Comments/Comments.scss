@@ -1,0 +1,18 @@
+.user {
+  background: #eaeaea;
+  padding: 8px;
+  border-radius: 8px;
+
+  .text-user {
+    .action {
+      opacity: 0;
+      transition: all 0.2s ease;
+    }
+  }
+
+  &:hover .text-user {
+    .action {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "binh123",
+      "password": "12345678",
+      "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=eb77f238-2fc7-4205-ba42-0762091a0d1e",
+      "urlWallpaper": "https://www.w3schools.com/howto/img_avatar.png",
+      "isBlock": false
+    },
+    {
+      "id": 2,
+      "username": "bach345",
+      "password": "1111",
+      "urlWallpaper": "https://www.w3schools.com/howto/img_avatar2.png",
+      "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png",
+      "isBlock": false
+    },
+    {
+      "id": 3,
+      "username": "cuong678",
+      "password": "2222",
+      "urlAvatar": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000",
+      "urlWallpaper": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000",
+      "isBlock": false
+    },
+    {
+      "username": "hoang123",
+      "password": "123",
+      "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png",
+      "urlWallpaper": "https://www.w3schools.com/howto/img_avatar.png",
+      "isBlock": false,
+      "id": 4
+    },
+    {
+      "username": "hai123",
+      "password": "123",
+      "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png",
+      "urlWallpaper": "https://www.w3schools.com/howto/img_avatar.png",
+      "isBlock": false,
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "id": 3,
+      "like": 0,
+      "isHidden": false,
+      "idUser": {
+        "id": 2,
+        "username": "bach345",
+        "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+      },
+      "dataPost": {
+        "tadName": "",
+        "text": "Xin chào mọi người 2",
+        "urlUpload": ""
+      }
+    },
+    {
+      "like": 0,
+      "isHidden": false,
+      "idUser": {
+        "id": 1,
+        "username": "binh123",
+        "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+      },
+      "dataPost": {
+        "tadName": "",
+        "text": "em cũng có ảnh này :))) ",
+        "urlUpload": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fpngwing.com.png?alt=media&token=97e3c410-9b1b-4c24-963d-4f1925fc54a4"
+      },
+      "id": 4
+    },
+    {
+      "like": 1,
+      "isHidden": false,
+      "idUser": {
+        "id": 2,
+        "username": "bach345",
+        "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+      },
+      "dataPost": {
+        "tadName": "",
+        "text": "đây là béc hahahjkad kaka",
+        "urlUpload": ""
+      },
+      "id": 5
+    },
+    {
+      "like": 0,
+      "isHidden": false,
+      "idUser": {
+        "id": 1,
+        "username": "binh123",
+        "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=87a53cbb-d76a-4b49-9b99-79ecb72e1db9"
+      },
+      "dataPost": {
+        "tagName": [
+          {
+            "label": "binh123",
+            "value": "binh123"
+          },
+          {
+            "label": "bach345",
+            "value": "bach345"
+          }
+        ],
+        "text": "hh",
+        "urlUpload": ""
+      },
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 3,
+      "dataComment": [
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "comment 4 cái cc"
+        },
+        {
+          "idUser": {
+            "username": "cuong678",
+            "urlAvatar": "https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?w=2000"
+          },
+          "text": "xin chào mọi người"
+        },
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "Xin chào MCK :))~"
+        }
+      ]
+    },
+    {
+      "dataComment": [
+        {
+          "idUser": {
+            "username": "binh123",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+          },
+          "text": "hello lo cc"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "dataComment": [
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "đây là béc"
+        },
+        {
+          "idUser": {
+            "username": "binh123",
+            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fpngwing.com.png?alt=media&token=74d36a95-fa77-497b-ad2c-d584f1bcfd94"
+          },
+          "text": "Đây là binh nha nhon nhac"
+        },
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "Đây là bách cọp"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "dataComment": [
+        {
+          "idUser": {
+            "username": "binh123",
+            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=87a53cbb-d76a-4b49-9b99-79ecb72e1db9"
+          },
+          "text": "hello"
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "events": [
+    "https://images.unsplash.com/photo-1674574124649-778f9afc0e9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "https://plus.unsplash.com/premium_photo-1684746338133-8d52fadb4cd4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    "https://i.pinimg.com/236x/7d/d7/a0/7dd7a0d2cdd720a70b42232bcb7eba84.jpg",
+    "https://i.pinimg.com/236x/c0/4f/a9/c04fa91b8788b2cafe1a11355c0dde7e.jpg",
+    "https://i.pinimg.com/236x/7b/e8/0e/7be80e1dd312352fb3616ff285f18037.jpg",
+    "https://i.pinimg.com/236x/3e/7d/f0/3e7df0eeeccead85de7c7913b72f9391.jpg",
+    "https://i.pinimg.com/236x/e0/cd/15/e0cd1504d3153dea7d728a05c8007e08.jpg",
+    "https://i.pinimg.com/236x/d0/b1/d2/d0b1d2467d29fdaec3b3fd1f6c627dd5.jpg",
+    "https://i.pinimg.com/236x/f3/29/36/f32936b0b154411040df393f8a3be1d1.jpg",
+    "https://i.pinimg.com/474x/f2/1e/4d/f21e4dea8ff56d0c6072b6f30a835a5e.jpg",
+    "https://i.pinimg.com/236x/a7/ee/81/a7ee81171b61928bbce07f7230134db6.jpg",
+    "https://i.pinimg.com/236x/fb/d3/6b/fbd36b14133675a28fd15ba2849caa59.jpg"
+  ]
+}

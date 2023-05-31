@@ -1,0 +1,36 @@
+.body {
+  display: flex;
+  min-height: calc(100vh - 60px);
+
+  // sidebar
+  .sidebar {
+    width: 400px;
+  }
+  // route
+  .route {
+    width: calc(100vw - 800px);
+    // width: 900px;
+    // border-left: 2px solid #eaeaea;
+    // border-right: 2px solid #eaeaea;
+  }
+
+  // friends
+  .friends {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .body {
+    .sidebar {
+      display: none;
+    }
+    .friends {
+      display: none;
+    }
+
+    .route {
+      width: 100%;
+    }
+  }
+}
