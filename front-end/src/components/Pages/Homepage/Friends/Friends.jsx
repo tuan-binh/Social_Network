@@ -12,7 +12,8 @@ function Friends() {
   const loader = async () => {
     await axios
       .get("http://localhost:8000/events")
-      .then((res) => setDataEvent(res.data));
+      .then((res) => setDataEvent(res.data))
+      .catch((err) => console.log(err));
   };
 
   useEffect(() => {

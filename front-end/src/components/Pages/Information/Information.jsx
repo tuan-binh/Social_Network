@@ -37,7 +37,8 @@ function Information({ theme, changeMode }) {
   const loaderUser = async () => {
     await axios
       .get(`http://localhost:8000/users/${param.id}`)
-      .then((res) => setDataUser(res.data));
+      .then((res) => setDataUser(res.data))
+      .catch((err) => console.log(err));
   };
 
   const getPostUser = async () => {
@@ -48,13 +49,15 @@ function Information({ theme, changeMode }) {
           res.data.filter((e) => e.idUser.id === Number(param.id))
         );
         setLike(res.data.map((e) => ({ id: e.id, like: e.like })));
-      });
+      })
+      .catch((err) => console.log(err));
   };
   // load comments
   const loaderComments = async (id) => {
     await axios
       .get(`http://localhost:8000/comments/${id}`)
-      .then((res) => setDataComment(res.data));
+      .then((res) => setDataComment(res.data))
+      .catch((err) => console.log(err));
   };
   // handle delete post
   async function handleDeletePost(id) {

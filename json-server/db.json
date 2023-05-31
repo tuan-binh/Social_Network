@@ -73,21 +73,6 @@
       "id": 4
     },
     {
-      "like": 1,
-      "isHidden": false,
-      "idUser": {
-        "id": 2,
-        "username": "bach345",
-        "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
-      },
-      "dataPost": {
-        "tadName": "",
-        "text": "đây là béc hahahjkad kaka",
-        "urlUpload": ""
-      },
-      "id": 5
-    },
-    {
       "like": 0,
       "isHidden": false,
       "idUser": {
@@ -150,32 +135,6 @@
         }
       ],
       "id": 4
-    },
-    {
-      "dataComment": [
-        {
-          "idUser": {
-            "username": "bach345",
-            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
-          },
-          "text": "đây là béc"
-        },
-        {
-          "idUser": {
-            "username": "binh123",
-            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fpngwing.com.png?alt=media&token=74d36a95-fa77-497b-ad2c-d584f1bcfd94"
-          },
-          "text": "Đây là binh nha nhon nhac"
-        },
-        {
-          "idUser": {
-            "username": "bach345",
-            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
-          },
-          "text": "Đây là bách cọp"
-        }
-      ],
-      "id": 5
     },
     {
       "dataComment": [

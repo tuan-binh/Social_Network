@@ -21,7 +21,8 @@ function People() {
         setDataUser(
           res.data.filter((user) => user.username !== getUser.username)
         )
-      );
+      )
+      .catch((err) => console.log(err));
   };
 
   function handleToUser(id) {

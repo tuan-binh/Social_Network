@@ -12,7 +12,8 @@ function Postmanager() {
   const loaderPost = async () => {
     await axios
       .get("http://localhost:8000/posts")
-      .then((res) => setDataPost(res.data));
+      .then((res) => setDataPost(res.data))
+      .catch((err) => console.log(err));
   };
 
   async function handleHidden(id) {

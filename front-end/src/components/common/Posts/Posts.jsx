@@ -18,11 +18,14 @@ function Posts() {
     JSON.parse(localStorage.getItem("dataUserLogin"))
   );
   const loaderUser = async () => {
-    await axios.get("http://localhost:8000/users").then((res) => {
-      setOptions(
-        res.data.map((e) => ({ label: e.username, value: e.username }))
-      );
-    });
+    await axios
+      .get("http://localhost:8000/users")
+      .then((res) => {
+        setOptions(
+          res.data.map((e) => ({ label: e.username, value: e.username }))
+        );
+      })
+      .catch((err) => console.log(err));
   };
 
   // const status = useSelector((state) => state.reload);

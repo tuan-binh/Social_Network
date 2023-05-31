@@ -22,7 +22,8 @@ function Register() {
   const loadUser = async () => {
     await axios
       .get("http://localhost:8000/users")
-      .then((res) => setDataUser(res.data));
+      .then((res) => setDataUser(res.data))
+      .catch((err) => console.log(err));
   };
 
   function handleChangeValue(e) {

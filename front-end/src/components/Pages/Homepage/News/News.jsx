@@ -33,7 +33,8 @@ function News() {
     if (id) {
       await axios
         .get(`http://localhost:8000/comments/${id}`)
-        .then((res) => setDataComment(res.data));
+        .then((res) => setDataComment(res.data))
+        .catch((err) => console.log(err));
     }
   };
 

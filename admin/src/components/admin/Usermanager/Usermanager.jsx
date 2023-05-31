@@ -29,7 +29,8 @@ function Usermanager() {
       .then((res) => {
         setTotal(res.headers["x-total-count"]);
         setDataUser(res.data);
-      });
+      })
+      .catch((err) => console.log(err));
   };
 
   let result = Math.ceil(total / totalPage);

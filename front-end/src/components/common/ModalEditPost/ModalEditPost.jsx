@@ -23,27 +23,30 @@ function ModalEditPost({ show, handleClose, idPost, setShowEdit }) {
   }
 
   const [dataPostEdit, setDataPostEdit] = useState({
+    like: 0,
     idUser: {
       username: "",
       urlAvatar: "",
     },
     dataPost: {
+      tagName: "",
       text: "",
       urlUpload: "",
     },
   });
 
   // handle Del Image
+  const [urlUpload, setUrlUpload] = useState(null);
   function handleDelImg() {
     setDataPostEdit({
       ...dataPostEdit,
       dataPost: { ...dataPostEdit.dataPost, urlUpload: "" },
     });
+    setUrlUpload("");
   }
-  const [urlUpload, setUrlUpload] = useState();
 
   // handle change image
-  async function handleGetImg(e) {
+  function handleGetImg(e) {
     const file = e.target.files[0];
     if (!file) return;
     const storageRef = ref(storage, `files/${file.name}`);
@@ -61,7 +64,6 @@ function ModalEditPost({ show, handleClose, idPost, setShowEdit }) {
         });
       }
     );
-    dispatch(reloadPosts());
   }
 
   // handle Finish Edit
@@ -137,7 +139,7 @@ function ModalEditPost({ show, handleClose, idPost, setShowEdit }) {
           ) : (
             <input ref={ref} />
           )}
-          {dataPostEdit.dataPost.urlUpload ? (
+          {dataPostEdit.dataPost.urlUpload || urlUpload ? (
             <div className="block-img-edit">
               <img src={urlUpload} alt="" />
               <div className="absolute">

@@ -31,7 +31,8 @@ function Login() {
   const loadUser = async () => {
     await axios
       .get("http://localhost:8000/users")
-      .then((res) => setGetUser(res.data));
+      .then((res) => setGetUser(res.data))
+      .catch((err) => console.log(err));
   };
 
   function handleLogin() {

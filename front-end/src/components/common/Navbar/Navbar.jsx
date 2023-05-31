@@ -26,7 +26,8 @@ function Navbar({ changeMode }) {
   useEffect(() => {
     axios
       .get(`http://localhost:8000/users?username_like=${textSearch}`)
-      .then((res) => setDataUser(res.data));
+      .then((res) => setDataUser(res.data))
+      .catch((err) => console.log(err));
   }, [textSearch, status]);
 
   return (
