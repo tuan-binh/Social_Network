@@ -1,3 +1,10 @@
+.modal-content {
+  transform: translateX(-15%);
+  width: 700px;
+  max-height: 95vh;
+  overflow: auto;
+}
+
 .user {
   background: #eaeaea;
   padding: 8px;

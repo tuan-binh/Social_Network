@@ -56,14 +56,6 @@
           {
             "label": "binh123",
             "value": "binh123"
-          },
-          {
-            "label": "bach345",
-            "value": "bach345"
-          },
-          {
-            "label": "hoang123",
-            "value": "hoang123"
           }
         ],
         "text": "Xin chào mọi người 2",
@@ -86,7 +78,7 @@
       "id": 4
     },
     {
-      "like": 3,
+      "like": 0,
       "isHidden": false,
       "idUser": {
         "id": 1,
@@ -145,6 +137,13 @@
             "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
           },
           "text": "hello lo cc"
+        },
+        {
+          "idUser": {
+            "username": "bach345",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+          },
+          "text": "a"
         }
       ],
       "id": 4
