@@ -8,7 +8,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 25px;
+    padding: 10px;
     background: rgb(95, 10, 95);
     p {
       background: purple;
@@ -27,5 +27,16 @@
     margin-left: 320px;
     padding: 20px;
     flex: 1;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .flex-admin {
+    .tabs {
+      display: none;
+    }
+    .manager {
+      margin-left: 0;
+    }
   }
 }

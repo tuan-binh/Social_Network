@@ -105,6 +105,9 @@ function Information({ theme, changeMode }) {
       }
     );
     dispatch(reloadPosts());
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   }
   // handle Change Avatar
   function handleChangeAvatar(e) {
@@ -133,6 +136,9 @@ function Information({ theme, changeMode }) {
     );
 
     dispatch(reloadPosts());
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   }
   // handle like posts
   const [like, setLike] = useState([]);

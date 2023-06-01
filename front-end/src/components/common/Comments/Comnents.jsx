@@ -41,7 +41,6 @@ function Comnents({
       });
       setStatusUpdate(false);
     } else {
-      // khi comment
       const newCommnet = [...dataComment.dataComment];
       newCommnet.push({
         idUser: { username: user.username, urlAvatar: user.urlAvatar },
@@ -62,6 +61,7 @@ function Comnents({
     await axios.patch(`http://localhost:8000/comments/${idPost}`, {
       dataComment: newList,
     });
+
     dispatch(reloadPosts());
   }
 

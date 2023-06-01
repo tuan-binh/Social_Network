@@ -44,7 +44,7 @@
   "posts": [
     {
       "id": 3,
-      "like": 0,
+      "like": 4,
       "isHidden": false,
       "idUser": {
         "id": 2,
@@ -163,6 +163,13 @@
             "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
           },
           "text": "hkkk"
+        },
+        {
+          "idUser": {
+            "username": "aaa",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+          },
+          "text": "đasad"
         }
       ],
       "id": 6

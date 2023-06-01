@@ -30,6 +30,9 @@ function Register() {
     const { name, value } = e.target;
     setValueRegister({ ...valueRegister, [name]: value });
   }
+
+  const [success, setSuccess] = useState("");
+
   console.log("valueRegister ->", valueRegister);
   async function handleRegister() {
     if (
@@ -59,6 +62,7 @@ function Register() {
 
       if (check) {
         setError("");
+        setSuccess("Đăng Ký Thành Công");
         setTimeout(() => {
           axios.post("http://localhost:8000/users", {
             username: valueRegister.username,
@@ -96,9 +100,14 @@ function Register() {
             <i className="fa-solid fa-xmark"></i> {error}
           </p>
         ) : (
+          ""
+        )}
+        {success ? (
           <p style={{ textAlign: "center", color: "green" }}>
-            <i className="fa-solid fa-check"></i> Đăng ký thành công
+            <i className="fa-solid fa-check"></i> {success}
           </p>
+        ) : (
+          ""
         )}
         <Form
           name="normal_login"

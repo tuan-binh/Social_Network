@@ -4,6 +4,17 @@
   padding: 15px;
 }
 
+.menu-bar {
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  background: purple;
+  border-radius: 5px;
+  display: none;
+  color: #fff;
+}
+
 .search {
   position: relative;
   .search-user {
@@ -81,4 +92,10 @@
 .flex-pagination {
   display: flex;
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 1300px) {
+  .menu-bar {
+    display: flex;
+  }
 }

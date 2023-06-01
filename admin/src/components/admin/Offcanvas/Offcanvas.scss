@@ -1,0 +1,25 @@
+.offcanvas {
+  // background: purple !important;
+  background: rgb(95, 10, 95);
+
+  .btn-close {
+    display: none;
+  }
+}
+
+.side-bar {
+  p {
+    background: purple;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 250px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

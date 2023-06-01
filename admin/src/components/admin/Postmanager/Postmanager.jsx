@@ -2,6 +2,7 @@ import "./Postmanager.scss";
 
 import React, { useEffect, useState } from "react";
 
+import Offcanvassidebar from "../Offcanvas/Offcanvassidebar";
 import axios from "axios";
 
 function Postmanager() {
@@ -28,12 +29,21 @@ function Postmanager() {
     setReload(!reload);
   }
 
+  // offcanvas
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   useEffect(() => {
     loaderPost();
   }, [reload]);
 
   return (
     <div>
+      <div className="menu-bar" onClick={handleShow}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
       <h2 className="title">Postmanager</h2>
       <div className="flex-posts">
         <div className="show-posts">
@@ -114,6 +124,7 @@ function Postmanager() {
           </ul>
         </div>
       </div>
+      <Offcanvassidebar show={show} handleClose={handleClose} />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import "./Usermanager.scss";
 
 import React, { useEffect, useState } from "react";
 
+import Offcanvassidebar from "../Offcanvas/Offcanvassidebar";
 import Pagination from "react-bootstrap/Pagination";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
@@ -57,6 +58,11 @@ function Usermanager() {
     setReload(!reload);
   }
 
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   // useEffect data
   useEffect(() => {
     loaderUser();
@@ -64,6 +70,9 @@ function Usermanager() {
 
   return (
     <div>
+      <div className="menu-bar" onClick={handleShow}>
+        <i className="fa-solid fa-bars"></i>
+      </div>
       <h2 className="title">Quản Lý Người Dùng</h2>
       <div className="search">
         <input
@@ -140,6 +149,9 @@ function Usermanager() {
           />
         </Pagination>
       </div>
+
+      {/* offcanvas */}
+      <Offcanvassidebar show={show} handleClose={handleClose} />
     </div>
   );
 }
