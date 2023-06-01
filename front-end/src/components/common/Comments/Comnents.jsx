@@ -128,6 +128,7 @@ function Comnents({
           />
           {statusUpdate ? (
             <Button
+              type="submit"
               className="btn-send"
               variant="primary"
               disabled={textComment === ""}
@@ -136,6 +137,7 @@ function Comnents({
             </Button>
           ) : (
             <Button
+              type="submit"
               className="btn-send"
               variant="primary"
               disabled={textComment === ""}
