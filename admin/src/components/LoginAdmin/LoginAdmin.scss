@@ -4,6 +4,12 @@
   align-items: center;
   height: 100vh;
   background: #ccc;
+
+  .success {
+    text-align: center;
+    color: green;
+  }
+
   .box-login-admin {
     background: #eaeaea;
     border-radius: 12px;

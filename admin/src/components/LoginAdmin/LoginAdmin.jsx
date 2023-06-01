@@ -12,6 +12,7 @@ function LoginAdmin() {
   };
 
   const [valueLogin, setValueLogin] = useState({});
+  const [success, setSuccess] = useState("");
 
   function handleChangeText(e) {
     const { name, value } = e.target;
@@ -24,7 +25,10 @@ function LoginAdmin() {
       valueLogin.password === "abc@abc"
     ) {
       localStorage.setItem("checkAdmin", true);
-      window.location.href = "/";
+      setSuccess("Đăng Nhập Thành Công");
+      setTimeout(() => {
+        window.location.href = "/";
+      }, 1000);
     }
   }
 
@@ -32,6 +36,13 @@ function LoginAdmin() {
     <div className="flex-login-admin">
       <div className="box-login-admin">
         <h2>ADMIN</h2>
+        {success ? (
+          <p className="success">
+            <i class="fa-solid fa-check"></i> {success}
+          </p>
+        ) : (
+          ""
+        )}
         <Form
           name="normal_login"
           className="login-form"
