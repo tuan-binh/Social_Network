@@ -16,7 +16,17 @@ function Offcanvassidebar({ show, handleClose }) {
   return (
     <Offcanvas show={show} onHide={handleClose}>
       <Offcanvas.Header closeButton>
-        <Offcanvas.Title></Offcanvas.Title>
+        <Offcanvas.Title>
+          <div className="info">
+            <div>
+              <img
+                src="https://us.123rf.com/450wm/anatolir/anatolir2011/anatolir201105528/159470802-jurist-avatar-icon-flat-style.jpg?ver\u003d6"
+                alt=""
+              />
+            </div>
+            <p className="name">admin@gmail.com</p>
+          </div>
+        </Offcanvas.Title>
       </Offcanvas.Header>
       <Offcanvas.Body>
         <div className="side-bar">
