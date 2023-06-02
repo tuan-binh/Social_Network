@@ -6,20 +6,20 @@
   width: 70%;
   border-radius: 15px;
   margin: 20px auto 100px;
-  padding: 10px;
-
+  padding: 20px 10px;
+  // background: #5e646e;
   // content
-  .content {
-    height: 100px;
-    background: #ccc;
-    margin-bottom: 10px;
-    border-radius: 8px;
+  // .content {
+  //   height: 100px;
+  //   background: #ccc;
+  //   margin-bottom: 10px;
+  //   border-radius: 8px;
 
-    h2 {
-      text-align: center;
-      line-height: 100px;
-    }
-  }
+  //   h2 {
+  //     text-align: center;
+  //     line-height: 100px;
+  //   }
+  // }
 
   // action
 }
@@ -28,7 +28,8 @@
   width: 70%;
   margin: 0 auto;
   .item {
-    background: #fff;
+    background: #3c3e3f;
+    color: #fff;
     border-radius: 12px;
     margin: 70px 0;
 
@@ -115,6 +116,7 @@
       text-align: center;
       gap: 15px;
       padding: 10px;
+
       .heart,
       .dis-like,
       .comment {
@@ -123,12 +125,15 @@
         &:hover {
           cursor: pointer;
         }
+        i {
+          font-size: 18px;
+        }
       }
       button {
         /* Variables */
         --button_radius: 0.75em;
         --button_color: #98c0fd;
-        --button_outline_color: #000000;
+        --button_outline_color: #fff;
         font-size: 17px;
         font-weight: bold;
         border: none;

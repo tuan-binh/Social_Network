@@ -2,8 +2,38 @@
   h2 {
     color: #8f8f8f;
   }
-  background: #fff;
+  background: #3c3e3f;
+
+  color: #fff;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+
+  .content {
+    --button_radius: 17px;
+    --button_color: #98c0fd;
+    --button_outline_color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+    margin-bottom: 15px;
+    h2 {
+      color: #000;
+    }
+
+    .button_top {
+      padding: 30px;
+    }
+    &:hover .button_top {
+      /* Pull the button upwards when hovered */
+      transform: translateY(-0.33em);
+    }
+
+    &:active .button_top {
+      /* Push the button downwards when pressed */
+      transform: translateY(0);
+    }
+  }
 }
 
 .actionPost {
@@ -14,16 +44,15 @@
   .image,
   .emoji {
     flex: 1;
-    padding: 12px;
+    // padding: 12px;
     text-align: center;
-    background: #ccc;
-    border-radius: 8px;
+    // background: #98c0fd;
+    // border-radius: 8px;
     font-size: 20px;
     transition: all 0.3s ease;
 
     &:hover {
       cursor: pointer;
-      background: #afafaf;
     }
   }
 
@@ -111,4 +140,38 @@
     font-size: 20px;
     padding: 15px;
   }
+}
+
+button {
+  /* Variables */
+  --button_radius: 0.75em;
+  --button_color: #98c0fd;
+  --button_outline_color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
 }

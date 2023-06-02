@@ -107,7 +107,7 @@ function Information({ theme, changeMode }) {
     dispatch(reloadPosts());
     setTimeout(() => {
       window.location.reload();
-    }, 1000);
+    }, 2000);
   }
   // handle Change Avatar
   function handleChangeAvatar(e) {
@@ -138,7 +138,7 @@ function Information({ theme, changeMode }) {
     dispatch(reloadPosts());
     setTimeout(() => {
       window.location.reload();
-    }, 1000);
+    }, 2000);
   }
   // handle like posts
   const [like, setLike] = useState([]);
@@ -224,7 +224,7 @@ function Information({ theme, changeMode }) {
                 ""
               )}
             </div>
-            <h1 style={{ color: !theme ? "#fff" : "#000" }}>
+            <h1 style={{ color: !theme ? "#000" : "#fff" }}>
               {dataUser.username}
             </h1>
           </div>
@@ -294,20 +294,29 @@ function Information({ theme, changeMode }) {
                         className="heart"
                         onClick={() => handleHeart(e.id)}
                       >
-                        <i className="fa-solid fa-heart button_top"></i>
+                        <i
+                          style={{ color: "red" }}
+                          className="fa-solid fa-heart button_top"
+                        ></i>
                       </button>
                       <button
                         disabled={e.like === 0}
                         className="dis-like"
                         onClick={() => handleDisLike(e.id)}
                       >
-                        <i className="fa-solid fa-heart-crack button_top"></i>
+                        <i
+                          style={{ color: "red" }}
+                          className="fa-solid fa-heart-crack button_top"
+                        ></i>
                       </button>
                       <button
                         className="comment"
                         onClick={() => handleShow(e.id)}
                       >
-                        <i className="fa-solid fa-comment button_top"></i>
+                        <i
+                          style={{ color: "blue" }}
+                          className="fa-solid fa-comment button_top"
+                        ></i>
                       </button>
                     </div>
                   </li>

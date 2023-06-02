@@ -20,10 +20,9 @@ function App() {
 
   return (
     <div
+      className="App"
       style={{
-        backgroundColor: !theme ? "#434355" : "#f1f1f1",
         transition: "all 0.3s ease",
-        padding: "1px",
       }}
     >
       <Routes>

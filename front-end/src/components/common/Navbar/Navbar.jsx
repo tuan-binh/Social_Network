@@ -36,7 +36,7 @@ function Navbar({ changeMode }) {
         <Link to={"/"}>
           <div className="image">
             <img
-              src="https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/images%2Fpngwing.com.png?alt=media&token=38e0cc17-15cc-400a-8f8a-b1e7461cf5e9"
+              src="https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=eb77f238-2fc7-4205-ba42-0762091a0d1e"
               alt=""
             />
           </div>
@@ -67,7 +67,6 @@ function Navbar({ changeMode }) {
             </Link>
           </div>
           <p style={{ margin: "0" }}>{user.username}</p>
-          <i onClick={changeMode} className="fa-solid fa-moon"></i>
         </div>
         <button className="Btn" onClick={handleLogOut}>
           <div className="sign">
@@ -83,12 +82,14 @@ function Navbar({ changeMode }) {
           {dataUser.map((e, i) => {
             if (e.username !== user.username) {
               return (
-                <li key={i}>
-                  <div>
-                    <img src={e.urlAvatar} alt="" />
-                  </div>
-                  <p style={{ margin: "0" }}>{e.username}</p>
-                </li>
+                <Link>
+                  <li key={i}>
+                    <div>
+                      <img src={e.urlAvatar} alt="" />
+                    </div>
+                    <p style={{ margin: "0" }}>{e.username}</p>
+                  </li>
+                </Link>
               );
             }
           })}

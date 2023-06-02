@@ -1,11 +1,12 @@
 .side {
-  background: #fff;
+  background: #3c3e3f;
+  color: #fff;
   // min-height: calc(100vh - 100px);
   border-radius: 12px;
   margin: 20px;
   padding: 20px;
   position: sticky;
-  top: 80px;
+  top: 85px;
   left: 0;
 
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
@@ -25,7 +26,7 @@
     border-radius: 12px;
     &:hover {
       background: #ccc;
-      color: #3dc200;
+      color: #000;
       cursor: pointer;
     }
     i {

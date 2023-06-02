@@ -39,12 +39,20 @@
       "urlWallpaper": "https://www.w3schools.com/howto/img_avatar.png",
       "isBlock": false,
       "id": 5
+    },
+    {
+      "username": "binh189",
+      "password": "111",
+      "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2F121859823-male-avatar-icon-or-portrait-handsome-young-man-face-with-beard-vector-illustration.webp?alt=media&token=7850542b-d045-4816-9484-9c7ccef532b9",
+      "urlWallpaper": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload%20(1).png?alt=media&token=3d87ea34-9540-4c07-a2d7-a4e1376793a6",
+      "isBlock": false,
+      "id": 6
     }
   ],
   "posts": [
     {
       "id": 3,
-      "like": 4,
+      "like": 0,
       "isHidden": false,
       "idUser": {
         "id": 2,
@@ -64,16 +72,15 @@
     },
     {
       "like": 0,
-      "isHidden": false,
+      "isHidden": true,
       "idUser": {
         "id": 1,
         "username": "binh123",
         "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
       },
       "dataPost": {
-        "tadName": "",
         "text": "em cũng có ảnh này :))) ",
-        "urlUpload": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fpngwing.com.png?alt=media&token=97e3c410-9b1b-4c24-963d-4f1925fc54a4"
+        "urlUpload": ""
       },
       "id": 4
     },
@@ -83,7 +90,7 @@
       "idUser": {
         "id": 1,
         "username": "binh123",
-        "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=87a53cbb-d76a-4b49-9b99-79ecb72e1db9"
+        "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=eb77f238-2fc7-4205-ba42-0762091a0d1e"
       },
       "dataPost": {
         "tagName": [
@@ -96,10 +103,49 @@
             "value": "bach345"
           }
         ],
-        "text": "hh",
+        "text": "haha\n",
+        "urlUpload": ""
+      },
+      "id": 5
+    },
+    {
+      "like": 0,
+      "isHidden": true,
+      "idUser": {
+        "id": 6,
+        "username": "binh189",
+        "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+      },
+      "dataPost": {
+        "tagName": null,
+        "text": "hhh",
         "urlUpload": ""
       },
       "id": 6
+    },
+    {
+      "like": 0,
+      "isHidden": false,
+      "idUser": {
+        "id": 6,
+        "username": "binh189",
+        "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+      },
+      "dataPost": {
+        "tagName": [
+          {
+            "label": "binh123",
+            "value": "binh123"
+          },
+          {
+            "label": "cuong678",
+            "value": "cuong678"
+          }
+        ],
+        "text": "hh",
+        "urlUpload": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload%20(2).png?alt=media&token=3b951067-5b6f-4a4e-b493-869090cc70a9"
+      },
+      "id": 7
     }
   ],
   "comments": [
@@ -126,6 +172,13 @@
             "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
           },
           "text": "Xin chào MCK :))~"
+        },
+        {
+          "idUser": {
+            "username": "binh189",
+            "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
+          },
+          "text": "ádadsadas"
         }
       ]
     },
@@ -153,26 +206,27 @@
         {
           "idUser": {
             "username": "binh123",
-            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=87a53cbb-d76a-4b49-9b99-79ecb72e1db9"
+            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=eb77f238-2fc7-4205-ba42-0762091a0d1e"
           },
-          "text": "hello"
+          "text": "haha"
         },
         {
           "idUser": {
-            "username": "bach345",
-            "urlAvatar": "https://www.w3schools.com/howto/img_avatar2.png"
+            "username": "binh123",
+            "urlAvatar": "https://firebasestorage.googleapis.com/v0/b/upload-img-a4d0c.appspot.com/o/files%2Fdownload.png?alt=media&token=eb77f238-2fc7-4205-ba42-0762091a0d1e"
           },
-          "text": "hkkk"
-        },
-        {
-          "idUser": {
-            "username": "aaa",
-            "urlAvatar": "https://www.w3schools.com/howto/img_avatar.png"
-          },
-          "text": "đasad"
+          "text": "test bình luân"
         }
       ],
+      "id": 5
+    },
+    {
+      "dataComment": [],
       "id": 6
+    },
+    {
+      "dataComment": [],
+      "id": 7
     }
   ],
   "events": [

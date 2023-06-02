@@ -36,12 +36,18 @@ function Register() {
   console.log("valueRegister ->", valueRegister);
   async function handleRegister() {
     if (
+      valueRegister.username == "" ||
+      valueRegister.password == "" ||
+      valueRegister.confirmPassword == ""
+    ) {
+      setError("Vui lòng nhập đầy đủ thông tin");
+      console.log("hello");
+    } else if (
       !checkSpace(valueRegister.username) ||
       !checkSpace(valueRegister.password) ||
       !checkSpace(valueRegister.confirmPassword)
     ) {
-      setError("Bạn không được nhập khoảng trắng");
-      console.log("hello");
+      setError("Không được nhập khoảng trắng");
     } else {
       let check = false;
       for (let i = 0; i < dataUser.length; i++) {
@@ -78,13 +84,16 @@ function Register() {
   }
 
   function checkSpace(str) {
-    let newArr = str.split("");
-    for (let i = 0; i < newArr.length; i++) {
-      if (newArr[i] === " ") {
-        return false;
+    if (str) {
+      let newArr = str.split("");
+      for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] === " ") {
+          return false;
+        }
       }
+      return true;
     }
-    return true;
+    return false;
   }
 
   useEffect(() => {
@@ -94,9 +103,9 @@ function Register() {
   return (
     <div className="flex-register">
       <div className="box-register">
-        <h2>Register</h2>
+        <h2>Sign Up</h2>
         {error ? (
-          <p style={{ textAlign: "center", color: "red" }}>
+          <p style={{ textAlign: "center", color: "red", padding: "10px" }}>
             <i className="fa-solid fa-xmark"></i> {error}
           </p>
         ) : (

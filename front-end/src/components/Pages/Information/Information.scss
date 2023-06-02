@@ -10,38 +10,6 @@
     position: absolute;
     bottom: 15px;
     right: 15px;
-    button {
-      --button_radius: 0.75em;
-      --button_color: #98c0fd;
-      --button_outline_color: #000000;
-      font-size: 17px;
-      font-weight: bold;
-      border: none;
-      border-radius: var(--button_radius);
-      background: var(--button_outline_color);
-      .button_top {
-        display: block;
-        box-sizing: border-box;
-        border: 2px solid var(--button_outline_color);
-        border-radius: var(--button_radius);
-        padding: 0.75em 1.5em;
-        background: var(--button_color);
-        // color: var(--button_outline_color);
-        color: #000;
-        transform: translateY(-0.2em);
-        transition: transform 0.1s ease;
-      }
-
-      &:hover .button_top {
-        /* Pull the button upwards when hovered */
-        transform: translateY(-0.33em);
-      }
-
-      &:active .button_top {
-        /* Push the button downwards when pressed */
-        transform: translateY(0);
-      }
-    }
   }
   .editWallpaper {
     position: absolute;
@@ -121,7 +89,7 @@
 .body-posts {
   margin: 250px auto 0;
   width: 65%;
-  background: #cfcfcf;
+  background: #c4c4c4;
   display: flex;
   border-radius: 12px;
   .departmemts {
@@ -144,10 +112,12 @@
 
 .list-my-news {
   .item {
-    background: #fff;
+    background: #3c3e3f;
+    color: #fff;
     border-radius: 12px;
     margin: 70px 20px;
     padding: 20px 20px 0 20px;
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
 
     .head {
       padding: 10px;
@@ -231,7 +201,7 @@
         /* Variables */
         --button_radius: 0.75em;
         --button_color: #98c0fd;
-        --button_outline_color: #000000;
+        --button_outline_color: #fff;
         font-size: 17px;
         font-weight: bold;
         border: none;

@@ -14,3 +14,8 @@ ul li {
 p {
   margin: 0;
 }
+
+.App {
+  /* background-image: url("https://img.freepik.com/free-vector/japanese-seamless-vector-vintage-wave-pattern_8130-645.jpg?w=1060&t=st=1685173440~exp=1685174040~hmac=74df5a0d01bb9af700f10f1e77dad132c6b8e2e1dbf7a3f944f3906c4c0439bb"); */
+  background: #eaeaea;
+}

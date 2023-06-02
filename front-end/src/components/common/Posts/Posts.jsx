@@ -6,6 +6,7 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Select from "react-select";
+import Toastify from "toastify-js";
 import axios from "axios";
 import { reloadPosts } from "../../../Store/reducerPost";
 import { storage } from "../../../firebase/firebase";
@@ -79,6 +80,11 @@ function Posts() {
       },
     });
     await axios.post("http://localhost:8000/comments", { dataComment: [] });
+    Toastify({
+      text: "Đăng bài thành công",
+      position: "center",
+      duration: 3000,
+    }).showToast();
     dispatch(reloadPosts());
     setUrlUpload("");
   }
@@ -102,18 +108,27 @@ function Posts() {
     <>
       <div className="postNews" onClick={handleShow}>
         <div className="content">
-          <h2>Writing for something...</h2>
+          <h2 className="button_top">Writing for something...</h2>
         </div>
         <div className="actionPost">
-          <div className="live">
-            <i className="fa-solid fa-video"></i>
-          </div>
-          <div className="image">
-            <i className="fa-solid fa-images"></i>
-          </div>
-          <div className="emoji">
-            <i className="fa-solid fa-paper-plane"></i>
-          </div>
+          <button className="live">
+            <i
+              style={{ color: "red" }}
+              className="fa-solid fa-video button_top"
+            ></i>
+          </button>
+          <button className="image">
+            <i
+              style={{ color: "green" }}
+              className="fa-solid fa-images button_top"
+            ></i>
+          </button>
+          <button className="emoji">
+            <i
+              style={{ color: "blue" }}
+              className="fa-solid fa-paper-plane button_top"
+            ></i>
+          </button>
         </div>
       </div>
 

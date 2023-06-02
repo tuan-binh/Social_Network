@@ -182,17 +182,26 @@ function News() {
               </div>
               <div className="action-item">
                 <button className="heart" onClick={() => handleHeart(e.id)}>
-                  <i className="fa-solid fa-heart button_top"></i>
+                  <i
+                    style={{ color: "red" }}
+                    className="fa-solid fa-heart button_top"
+                  ></i>
                 </button>
                 <button
                   disabled={e.like === 0}
                   className="dis-like"
                   onClick={() => handleDisLike(e.id)}
                 >
-                  <i className="fa-solid fa-heart-crack button_top"></i>
+                  <i
+                    style={{ color: "red" }}
+                    className="fa-solid fa-heart-crack button_top"
+                  ></i>
                 </button>
                 <button className="comment" onClick={() => handleShow(e.id)}>
-                  <i className="fa-solid fa-comment button_top"></i>
+                  <i
+                    style={{ color: "blue" }}
+                    className="fa-solid fa-comment button_top"
+                  ></i>
                 </button>
               </div>
             </div>

@@ -75,7 +75,7 @@ function Login() {
   return (
     <div className="flex-login">
       <div className="box">
-        <h2>Đăng nhập</h2>
+        <h2>Sign In</h2>
         {!success ? (
           error ? (
             <p style={{ textAlign: "center", color: "red", fontWeight: "600" }}>

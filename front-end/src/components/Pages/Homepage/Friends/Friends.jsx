@@ -19,7 +19,7 @@ function Friends() {
   function handleSuccess() {
     Toastify({
       text: "Mời bạn bè thành công",
-      position: "center",
+      position: "left",
       duration: 3000,
       style: {
         background: "linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)",
@@ -33,18 +33,15 @@ function Friends() {
 
   return (
     <div className="box-friends">
-      <h1>Sự kiện vui chơi cùng bạn bè</h1>
+      <h1>event with friends</h1>
       <div className="list-friends">
         <div className="row">
           {dataEvent.map((e, i) => {
             return (
               <div key={i} className="event">
                 <img src={e} alt="" />
-                {/* <Button className="join" variant="primary">
-                  Mời bạn bè
-                </Button> */}
                 <button onClick={handleSuccess}>
-                  <span class="button_top">Mời Bạn Bè</span>
+                  <span class="button_top">Invite friends</span>
                 </button>
               </div>
             );
